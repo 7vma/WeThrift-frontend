@@ -1,17 +1,20 @@
-import {Routes, Route} from "react-router-dom"
+import {Routes, Route, Outlet} from "react-router-dom"
 import Register from "../pages/Register";
 import Login from "../pages/Login";
+import Home from "../pages/Home";
+import CreateProduct from "../pages/CreateProduct";
 
-
-function Main(props) {
+function Main({signUp}) {
     return (
         <div className="Main">
-        
+    <Outlet />   
     <Routes>
     
-    <Route path="/register" props element={<Register />} />
-    <Route path="/login" props element={<Login />} />
-    
+    <Route path="/register" element={<Register signUp = {signUp} />} />
+    <Route path="/login"  element={<Login />} />
+    <Route path="/home" element={<Home />} />
+    <Route path="/create_product" element={<CreateProduct />} />
+
     </Routes>
 
         </div>

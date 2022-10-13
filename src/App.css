@@ -1,6 +1,10 @@
+
+
 .App {
   text-align: center;
+  
 }
+
 .Header {
   display: flex;
   flex-direction: row;

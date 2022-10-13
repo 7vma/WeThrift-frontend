@@ -1,14 +1,15 @@
 
+import './dist/output.css'
 import './App.css';
 import { setUserToken, clearUserToken, getUserToken } from './utils/authToken'
 import Header from './components/Header';
 import Main from './components/Main';
 import {useState} from 'react';
 import React from 'react';
-function App(props) {
+function App() {
   const [currentUser, setCurrentUser] = useState({})
   const [isAuthenticated, setIsAuthenticated] = useState(false)
-
+  // const signUp = props.signUp;
   const registerUser = async (data) => {
     try {
 
@@ -21,7 +22,7 @@ function App(props) {
       }
 
       const newUser = await fetch(
-        "http://localhost:4000/auth/register",
+        "https://letsthrift-backend.herokuapp.com/auth/register",
         configs
       )
 
@@ -56,7 +57,7 @@ function App(props) {
         },
       }
       const response = await fetch(
-        "http://localhost:4000/auth/login",
+        "https://letsthrift-backend.herokuapp.com/auth/login",
         configs
       )
       const user = await response.json()
@@ -78,13 +79,14 @@ function App(props) {
 
 
   return (
-    <div className="App">
+    <div className="App ">
       
     <Header user={currentUser}/>
-    <img src="https://media0.giphy.com/media/TkCXXTLD8aRb9M18Gy/200w.gif?cid=82a1493b31ecy915cxy3lmgonmhm0h6e9hhbt9senav969m1&rid=200w.gif&ct=g"/>
-    <img src="https://media0.giphy.com/media/BpRh0HV5w2zMSBFYVv/200w.gif?cid=82a1493bdlei2rhfkyxus0njuktnfno96gy84jfgobalaxfl&rid=200w.gif&ct=g"/>
-    <img src="https://media0.giphy.com/media/MbLooWnhG4Te2FoEOs/200w.gif?cid=82a1493b4s1o669077awwkiladfa6cutjkcomq639azotxul&rid=200w.gif&ct=g"/>
+    
     <Main isLoggedIn={isAuthenticated} signUp={registerUser} login={loginUser} user={currentUser} />
+    <img className='shoes' src="https://media0.giphy.com/media/TkCXXTLD8aRb9M18Gy/200w.gif?cid=82a1493b31ecy915cxy3lmgonmhm0h6e9hhbt9senav969m1&rid=200w.gif&ct=g"alt='sb dunks'/>
+    <img className='shoes' src="https://media0.giphy.com/media/BpRh0HV5w2zMSBFYVv/200w.gif?cid=82a1493bdlei2rhfkyxus0njuktnfno96gy84jfgobalaxfl&rid=200w.gif&ct=g"alt='ozweego'/>
+    <img className='shoes' src="https://media0.giphy.com/media/MbLooWnhG4Te2FoEOs/200w.gif?cid=82a1493b4s1o669077awwkiladfa6cutjkcomq639azotxul&rid=200w.gif&ct=g" alt='nike'/>
     </div>
   )
 }

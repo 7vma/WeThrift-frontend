@@ -1,6 +1,6 @@
 // import RegisterForm from "../components/RegisterForm";
 import  {useNavigate} from 'react-router-dom'
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 
 
 const Register = ({signUp}) => {
@@ -8,14 +8,15 @@ const initialState = { username: "",email:"", password:""}
 const [input, setInput] = useState(initialState)
 const navigate = useNavigate()
 
+
 const handleSubmit = async (e) => {
     e.preventDefault()
     const createdUserToken = await signUp(input)
 
     if (createdUserToken) {
-        navigate("/")
+        navigate("/home")
     } else {
-        navigate("/")
+        navigate("/login")
     }
 		setInput(initialState);
 };
@@ -25,7 +26,8 @@ const handleChange = (e) => {
 };
 
 return (
-    <>
+    <div className='registerForm '>
+        
         <h1>Register</h1>
         <form onSubmit={handleSubmit}>
             <label htmlFor="username">Username: </label>
@@ -34,6 +36,9 @@ return (
                 name="username"
                 value={input.username}
                 onChange={handleChange}
+                className="text-sm text-gray-base w-full 
+                mr-3 py-5 px-4 h-2 border 
+                border-gray-200 rounded mb-2"
         />
         <br />
         <br />
@@ -43,6 +48,9 @@ return (
                 name="email"
                 value={input.email}
                 onChange={handleChange}
+                className="text-sm text-gray-base w-full 
+                mr-3 py-5 px-4 h-2 border 
+                border-gray-200 rounded mb-2"
         />
         <br />
         <br />
@@ -52,12 +60,15 @@ return (
                 name="password"
                 value={input.password}
                 onChange={handleChange}
+                className="text-sm text-gray-base w-full 
+                mr-3 py-5 px-4 h-2 border 
+                border-gray-200 rounded mb-2"
         />
         <br />
         <br />
-            <input type="submit" value="signUp" />
+        <button><input type="submit" value="signup"/> </button>
         </form>
-    </>
+        </div>
 
     );
 
