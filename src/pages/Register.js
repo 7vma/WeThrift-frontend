@@ -1,7 +1,7 @@
 // import RegisterForm from "../components/RegisterForm";
 import  {useNavigate} from 'react-router-dom'
 import {useState, useEffect} from 'react'
-
+import '../dist/output.css'
 
 const Register = ({signUp}) => {
 const initialState = { username: "",email:"", password:""}
@@ -26,7 +26,7 @@ const handleChange = (e) => {
 };
 
 return (
-    <div className='registerForm '>
+    <div className='registerForm'>
         
         <h1>Register</h1>
         <form onSubmit={handleSubmit}>
@@ -66,7 +66,7 @@ return (
         />
         <br />
         <br />
-        <button><input type="submit" value="signup"/> </button>
+        <button><input className='bg-sky-500/50' type="submit" value="signup"/> </button>
         </form>
         </div>
 
