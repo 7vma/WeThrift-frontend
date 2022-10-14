@@ -10,7 +10,7 @@
   flex-direction: row;
   background-color: rgba(0, 0, 0, .9);
   color: whitesmoke;
-  border-bottom: 1px dashed bisque ;
+  border-bottom: 1px solid rgba(0, 0, 0, .9) ;
 }
 
 .logo {

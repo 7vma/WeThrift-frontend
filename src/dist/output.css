@@ -597,11 +597,12 @@ input {
   border-radius: 5px;
   /* color: black; */
 }
-button{
+button.delete, button.submit-btn,{
   background-color: black;
   color: bisque;
   width: 100%;
 }
+
 .submit-btn{
   color: bisque;
   background-color: black;
@@ -611,18 +612,18 @@ button{
   flex-direction: row;
   justify-content: center;
   background-color: rgba(0, 0, 0, .9);
-  /* justify-content: center; */
   box-shadow: 1px 1px black;
 }
 .home-text{
   font-weight: bold;
   font-family: Luckiest_Guy;
   font-size: 30px;
-  border:1px dashed black ;
+  border:1px solid black ;
   text-shadow: 2px 5px bisque;
+  text-align: center;
 }
 .product-card{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: inline;
+  /* flex-direction: row; */
+  /* justify-content: center; */
 }

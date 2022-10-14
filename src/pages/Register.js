@@ -29,46 +29,44 @@ return (
     <div className='registerForm'>
         
         <h1 className='login_register'>Register</h1>
-        <form onSubmit={handleSubmit}>
-            <label htmlFor="username">Username: </label>
+        <form className='mt-8 space-y-6' onSubmit={handleSubmit}>
+        <div className="grid grid-cols-3 gap-6">
+            <label htmlFor="username" className='block text-sm font-medium '>Username: </label>
             <input
                 id="username"
                 name="username"
                 value={input.username}
                 onChange={handleChange}
-                className="text-sm text-gray-base w-full 
-                mr-3 py-5 px-4 h-2 border 
-                border-gray-200 rounded mb-2"
+                className=" min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8"
         />
+        {/* <div className="-space-y-px rounded-md shadow-sm"></div> */}
         <br />
         <br />
-        <label htmlFor="email">Email: </label>
+        <label htmlFor="email" className='block text-sm font-medium ' >Email: </label>
             <input
                 id="email"
                 name="email"
                 value={input.email}
                 onChange={handleChange}
-                className="text-sm text-gray-base w-full 
-                mr-3 py-5 px-4 h-2 border 
-                border-gray-200 rounded mb-2"
+                className="min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8"
         />
         <br />
         <br />
-            <label htmlFor="password">Password: </label>
+            <label htmlFor="password" className='block text-sm font-medium ' >Password: </label>
             <input
                 id="password"
                 name="password"
                 value={input.password}
                 onChange={handleChange}
-                className="text-sm text-gray-base w-full 
-                mr-3 py-5 px-4 h-2 border 
-                border-gray-200 rounded mb-2"
+                className="min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8"
         />
         <br />
         <br />
         <button><input className='bg-sky-500/50' type="submit" value="signup"/> </button>
+        </div>
         </form>
         </div>
+        
 
     );
 

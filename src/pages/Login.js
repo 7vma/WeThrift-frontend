@@ -13,7 +13,7 @@
 // import RegisterForm from "../components/RegisterForm";
 import  {useNavigate} from 'react-router-dom'
 import {useState, useEffect} from 'react'
-import '../dist/output.css'
+import '../dist/output.css';
 
 const Login = ({login}) => {
 const initialState = { username: "",email:"", password:""}
@@ -41,16 +41,14 @@ return (
     <div className='loginForm'>
         
         <h1 className='login_register'>Login</h1>
-        <form onSubmit={handleSubmit}>
+        <form className='mt-8 space-y-6' onSubmit={handleSubmit}>
             <label htmlFor="username">Username: </label>
             <input
                 id="username"
                 name="username"
                 value={input.username}
                 onChange={handleChange}
-                className="text-sm text-gray-base w-full 
-                mr-3 py-5 px-4 h-2 border 
-                border-gray-200 rounded mb-2"
+                className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
         />
         <br />
         <br />
@@ -78,7 +76,7 @@ return (
         />
         <br />
         <br />
-        <button><input className='bg-sky-500/50' type="submit" value="signup"/> </button>
+        <button className='submit-btn'><input type="submit" value="signup"/> </button>
         </form>
         </div>
 
