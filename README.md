@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Resell ecommerce site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description:
+An e-commerce site focused on buying and reselling a variety of items, from clothing to miscellaneous items. Users set their price, can respond to reviews by responding openly within the post.
+This online community can vary from day-to-day thrift haulers, to individuals who simply want to resell their unwanted belongings. Come explore the goodies hiding in ones closet with WeThrift.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Wireframe:
 
-### `npm start`
+![wireframe](https://i.imgur.com/Aq42kdf.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Users will be able to post items, Leave reviews, and buy items
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### User:
+- Post
+- Review
+- Buy
+- Owner should be able to respond
 
-### `npm test`
+### POST:
+- Type
+- Brand
+- Image
+- Description
+- Condition
+- Price
+- Comments
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Review / Comments:
+- tied with post
+- users can communicate in a thread about specific item
+- open dialogue for community to see // full transperency 
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Buy:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Mock checkout page
+- Purchase button lead to form
+- Request to buy
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Views:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Login page
+- Home page
+- Post page
+- Purchase page
+- Confirmation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Technologies used:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+<p float="left">
+<img src="https://cdn.iconscout.com/icon/free/png-256/react-4-1175110.png" width="100" height="100"/>
+<img src="https://www.svgrepo.com/show/354431/tailwindcss-icon.svg" width="100" height="100"/>
+<img src="https://images.vexels.com/media/users/3/166403/isolated/lists/a5a33bf3004830a2bd581e9fa65de660-javascript-programming-language-icon.png" width="100" height="100"/>
+<img src="https://cdn.iconscout.com/icon/free/png-256/html-5-1-1175208.png" width="100" height="100"/>
+<img src="https://cdn.iconscout.com/icon/free/png-256/sass-3629630-3031098.png" width="100" height="100"/>
+!<img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/node-js-5363131-4488920.png" width="100" height="100"/>
+<img src="https://cdn.iconscout.com/icon/free/png-256/mongodb-5-1175140.png" width="100" height="100"/>
+</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
