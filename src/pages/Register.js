@@ -28,7 +28,7 @@ const handleChange = (e) => {
 return (
     <div className='registerForm'>
         
-        <h1>Register</h1>
+        <h1 className='login_register'>Register</h1>
         <form onSubmit={handleSubmit}>
             <label htmlFor="username">Username: </label>
             <input

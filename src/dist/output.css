@@ -15,6 +15,14 @@
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
+.logo-e{
+  font-size: 20px;
+}
+
+.logo-w{
+  font-size: 33px;
+}
+
 .logo {
   font-family: Luckiest_Guy;
   font-size: 35px;
@@ -24,7 +32,7 @@
 .logo{
   margin-top: 5px;
 }
-a.login, a.register {
+a.login, a.register, a.create{
   margin-top: 15px;
   margin-right: 20px;
   color: bisque;
@@ -598,4 +606,23 @@ button{
   color: bisque;
   background-color: black;
 }
-
+.gif-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .9);
+  /* justify-content: center; */
+  box-shadow: 1px 1px black;
+}
+.home-text{
+  font-weight: bold;
+  font-family: Luckiest_Guy;
+  font-size: 30px;
+  border:1px dashed black ;
+  text-shadow: 2px 5px bisque;
+}
+.product-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

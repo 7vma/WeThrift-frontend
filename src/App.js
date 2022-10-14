@@ -1,4 +1,5 @@
 
+// import './input.css'
 import './dist/output.css'
 import './App.css';
 import { setUserToken, clearUserToken, getUserToken } from './utils/authToken'
@@ -6,6 +7,8 @@ import Header from './components/Header';
 import Main from './components/Main';
 import {useState} from 'react';
 import React from 'react';
+import'./index.css';
+
 function App() {
   const [currentUser, setCurrentUser] = useState({})
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -47,6 +50,8 @@ function App() {
     }
   }
 
+
+  
   const loginUser = async (data) => {
     try {
       const configs = {
@@ -80,9 +85,8 @@ function App() {
 
   return (
     <div className="App ">
-      
+      {/* <h1 className='text-3xl font-bold underline'>orange</h1> */}
     <Header user={currentUser}/>
-    
     <Main isLoggedIn={isAuthenticated} signUp={registerUser} login={loginUser} user={currentUser} />
     <img className='shoes' src="https://media0.giphy.com/media/TkCXXTLD8aRb9M18Gy/200w.gif?cid=82a1493b31ecy915cxy3lmgonmhm0h6e9hhbt9senav969m1&rid=200w.gif&ct=g"alt='sb dunks'/>
     <img className='shoes' src="https://media0.giphy.com/media/BpRh0HV5w2zMSBFYVv/200w.gif?cid=82a1493bdlei2rhfkyxus0njuktnfno96gy84jfgobalaxfl&rid=200w.gif&ct=g"alt='ozweego'/>

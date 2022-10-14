@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Router} from "react-router-dom"
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Router>

@@ -10,18 +10,28 @@
   flex-direction: row;
   background-color: rgba(0, 0, 0, .9);
   color: whitesmoke;
+  border-bottom: 1px dashed bisque ;
 }
 
 .logo {
-  margin-left: 40px;
+  margin-left: 15px;
 
   
 }
-.login, .register{
+.login, .register .create{
   display: flex;
   flex-direction: column;
   text-decoration: none;
   margin: 0 auto;
   color: whitesmoke;
   margin-top: 5px;
+  font-weight: bold;
+}
+
+.create{
+  margin-left: 40px;
+  font-weight: bold;
+}
+.register {
+  font-weight: bold;
 }

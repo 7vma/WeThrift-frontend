@@ -23,11 +23,11 @@ function CreateProduct(props) {
                 },
                 body: JSON.stringify(data)
             }
-            const response = await fetch('http://localhost:4000/product/', config)
+            const response = await fetch('https://letsthrift-backend.herokuapp.com/product', config)
             // check status before converting to JSON
 
-            const newNote = await response.json()
-            console.log(newNote)
+            const newProduct = await response.json()
+            console.log(newProduct)
             // console.log("all good: ", newNote.status < 400)
         }catch(err){
             console.log(err)
