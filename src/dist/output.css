@@ -32,12 +32,19 @@
 .logo{
   margin-top: 5px;
 }
-a.login, a.register, a.create{
+a.cart-btn, a.login, a.register, a.create{
   margin-top: 15px;
   margin-right: 20px;
   color: bisque;
   text-shadow: 1px 2px solid white ;
 }
+
+.nav-bar{
+  display: grid;
+  grid-column-end: auto;
+  grid-template-columns: 270% 50% 10% 50%;
+}
+
 *,
 ::before,
 ::after {
@@ -597,7 +604,7 @@ input {
   border-radius: 5px;
   /* color: black; */
 }
-button.delete, button.submit-btn,{
+button.delete, button.submit-btn{
   background-color: black;
   color: bisque;
   width: 100%;
@@ -626,4 +633,9 @@ button.delete, button.submit-btn,{
   display: inline;
   /* flex-direction: row; */
   /* justify-content: center; */
+}
+.cart-btn{
+  /* display: inline-flexbox; */
+  /* margin-left: 975px; */
+  font-size: 24px;
 }

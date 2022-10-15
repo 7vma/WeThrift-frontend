@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-
+import Edit from '../components/Edit'
 function Show() {
     const [ product, setProduct ] = useState(null)
 		const { id } = useParams()
@@ -34,11 +34,6 @@ console.log(response)
           // console.log(deletedPerson)
         navigate(URL)
 
-          // navigate will change the browser's URL
-          // which will cause react-router to "redirect" to home page;
-          // the Main will then re-render the People component
-          // upon mount People will fetch the updated index of people data
-
     } catch (err) {
         console.log(err)
         navigate(URL)
@@ -58,6 +53,8 @@ console.log(response)
 				<h2>{product.price}</h2>
 				<img src={product.image} alt={product.description} />
                 <div className='submit-btn'>
+                    <Edit />
+                    {/* <button className=''><a className='' href='/products/edit/${:id}'> Edit</a></button> */}
                     <button className="delete" onClick={removeProduct}>
 						Remove Product
 					</button>

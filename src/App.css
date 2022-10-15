@@ -18,9 +18,9 @@
 
   
 }
-.login, .register .create{
-  display: flex;
-  flex-direction: column;
+.cart-btn, .login, .register .create{
+  /* display: grid;
+  grid-template-columns: 1fr; */
   text-decoration: none;
   margin: 0 auto;
   color: whitesmoke;
