@@ -53,8 +53,8 @@ console.log(response)
 				<h2>{product.price}</h2>
 				<img src={product.image} alt={product.description} />
                 <div className='submit-btn'>
-                    <Edit />
-                    {/* <button className=''><a className='' href='/products/edit/${:id}'> Edit</a></button> */}
+                    {/* <Edit /> */}
+                    <button className=''><a className='' href='/products/edit/${:id}'> Edit</a></button>
                     <button className="delete" onClick={removeProduct}>
 						Remove Product
 					</button>
