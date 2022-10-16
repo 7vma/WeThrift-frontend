@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import Edit from '../components/Edit'
+import Edit from './Edit'
+
 function Show() {
     const [ product, setProduct ] = useState(null)
 		const { id } = useParams()
@@ -47,19 +48,25 @@ console.log(response)
 	const loaded = () => {
         
 		return (
-			<div className="product">
-				<h1 className='home-text'>Product Details</h1>
-				<h2>{product.brand}</h2>
+            <div className='Show'>
+                <h1 className='home-text'>Product Details</h1>
+			<div className="product-card">
+				
+				
+				<img className='show-image' src={product.image} alt={product.description} />
+                <h2>{product.title}</h2>
+                <h2>{product.brand}</h2>
 				<h2>{product.price}</h2>
-				<img src={product.image} alt={product.description} />
+
                 <div className='submit-btn'>
                     {/* <Edit /> */}
-                    <button className=''><a className='' href='/products/edit/${:id}'> Edit</a></button>
+                    <button className='edit'><a className='edit' href='/products/edit/{:id}'> Edit</a></button>
                     <button className="delete" onClick={removeProduct}>
 						Remove Product
 					</button>
             </div>
 		</div>
+        </div>
 	)
 }	
 

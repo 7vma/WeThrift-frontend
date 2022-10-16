@@ -23,17 +23,17 @@ function Home(props){
             <img className='top-image' src='https://media.tenor.com/dfDU02ysJfwAAAAC/blue-anime.gif'></img>
             </div>
     <div className="text-bottom-border">
-        <h1 className="home-text">All Products</h1>
+        <h1 className="home-text bg-stone-200">All Products</h1>
     </div>
-    <section className="productList grid grid-rows-2 grid-cols-3 gap-4  ">
+    <section className="productList bg-stone-200 grid grid-rows-2 grid-cols-3 ">
         
         {productList.map((product,_id)=>{
             return (
-                <div className='home-text max-w-md'>
-                    <h1 className='text-center    '>{product.brand}</h1>
+                <div className='home-text hover:bg-slate-500 max-w-md'>
+                    <h1 className='text-center    '>{product.title}</h1>
                     <h1 className='text-center  '>{product.price}</h1>
                 <Link to= {`/products/${product._id}` }>
-                    <div className="product-card grid grid-col-3 ">
+                    <div className="product-card  grid grid-col-3 ">
                         
                     {/* <MDBRipple
         className='bg-image hover-overlay shadow-1-strong rounded'

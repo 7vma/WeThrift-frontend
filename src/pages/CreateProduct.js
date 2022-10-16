@@ -1,7 +1,7 @@
 import { getUserToken } from '../utils/authToken'
 import {useState} from 'react'
 function CreateProduct(props) {
-    const [input, setInput] = useState({ type: "", brand: "", image: "", description: "", condition: "", price: "" })
+    const [input, setInput] = useState({ type: "", brand: "", image: "", description: "",title: "", condition: "", price: "" })
     // state - {} - references key/value pairs in our model MVP (title body)
     // handlers:
     // handleSubmit - form
@@ -14,7 +14,7 @@ function CreateProduct(props) {
         e.preventDefault()
         try {
             const data = {...input}
-            setInput({type: "", brand: "", image: "", description: "", condition: "", price: "" })
+            setInput({type: "", brand: "",  image: "", description: "", title: "", condition: "", price: "" })
             const config = {
                 method: 'POST',
                 headers: {
@@ -42,9 +42,9 @@ function CreateProduct(props) {
             <section>
                 {/* <h1>Create Product</h1> */}
                 {/* <hr /> */}
-                <form className='product-form' onSubmit={handleSubmit}>
+                <form className='product-form ' onSubmit={handleSubmit}>
                 <br/>
-                    <label htmlFor="type">
+                    <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor="type">
                         Type:
                         <input type="text" name="type" id="type" value={input.type} onChange={handleChange} />
                     </label>
@@ -52,31 +52,37 @@ function CreateProduct(props) {
                     {/* req.body { title: "abcd", body: 'abcd' } */}
                     <br/>
                     <br/>
-                    <label htmlFor="brand">
+                    <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor="brand">
                         Brand:
                         <input type="text" name="brand" id="brand" value={input.brand} onChange={handleChange}/>
                     </label>
                     <br/>
                     <br/>
-                    <label htmlFor="image">
+                    <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor="image">
                         Image:
                         <input type="text" name="image" id="image" value={input.image} onChange={handleChange}/>
                     </label>
                     <br/>
                     <br/>
-                    <label htmlFor="description">
+                    <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor="description">
                         Description:
                         <input type="text" name="description" id="description" value={input.description} onChange={handleChange}/>
                     </label>
                     <br/>
                     <br/>
-                    <label htmlFor="condition">
+                    <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor="title">
+                        title:
+                        <input type="text" name="title" id="title" value={input.title} onChange={handleChange}/>
+                    </label>
+                    <br/>
+                    <br/>
+                    <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor="condition">
                         Conditon:
                         <input type="text" name="condition" id="condition" value={input.condition} onChange={handleChange}/>
                     </label>
                     <br/>
                     <br/>
-                    <label htmlFor="price">
+                    <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor="price">
                         Price:
                         <input type="text" name="price" id="price" value={input.price} onChange={handleChange}/>
                     </label>

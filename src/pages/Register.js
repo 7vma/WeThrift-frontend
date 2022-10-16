@@ -37,7 +37,7 @@ return (
                 name="username"
                 value={input.username}
                 onChange={handleChange}
-                className=" min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8"
+                className=" min-h-full items-center justify-center py-1 px-2 sm:px-6 lg:px-8"
         />
         {/* <div className="-space-y-px rounded-md shadow-sm"></div> */}
         <br />
@@ -48,7 +48,7 @@ return (
                 name="email"
                 value={input.email}
                 onChange={handleChange}
-                className="min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8"
+                className="min-h-full items-center justify-center py-1 px-4 sm:px-6 lg:px-8"
         />
         <br />
         <br />
@@ -58,11 +58,11 @@ return (
                 name="password"
                 value={input.password}
                 onChange={handleChange}
-                className="min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8"
+                className="min-h-full items-center justify-center py-1 px-4 sm:px-6 lg:px-8"
         />
         <br />
         <br />
-        <button><input className='bg-sky-500/50' type="submit" value="signup"/> </button>
+        <button className='submit-btn content-center justify-center'><input type="submit" value="signup"/> </button>
         </div>
         </form>
         </div>
