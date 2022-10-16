@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import Edit from './Edit'
+import { Link } from "react-router-dom";
 
 function Show() {
     const [ product, setProduct ] = useState(null)
@@ -41,6 +42,15 @@ console.log(response)
     }
 }
 
+useEffect(() => {
+    fetch(productURL)
+    .then((res) => res.json())
+    .then((json) => {
+        console.log(json)
+        setProduct(json)
+    })
+    .catch(console.error)
+}, [])
 
 
     useEffect(() => {getProduct()}, [])
@@ -60,7 +70,9 @@ console.log(response)
 
                 <div className='submit-btn'>
                     {/* <Edit /> */}
+                    <Link to= {`/products/edit/${product._id}` }>
                     <button className='edit'><a className='edit' href='/products/edit/{:id}'> Edit</a></button>
+                    </Link>
                     <button className="delete" onClick={removeProduct}>
 						Remove Product
 					</button>
