@@ -15,36 +15,6 @@
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
-.logo-e{
-  font-size: 20px;
-}
-
-.logo-w{
-  font-size: 33px;
-}
-
-.logo {
-  font-family: Luckiest_Guy;
-  font-size: 35px;
-  color: bisque;
-  text-shadow: 10px 2px solid white;
-}
-.logo{
-  margin-top: 5px;
-}
-a.cart-btn, a.login, a.register, a.create{
-  margin-top: 15px;
-  margin-right: 20px;
-  color: bisque;
-  text-shadow: 1px 2px solid white ;
-}
-
-.nav-bar{
-  display: grid;
-  grid-column-end: auto;
-  grid-template-columns: 270% 50% 10% 50%;
-}
-
 *,
 ::before,
 ::after {
@@ -590,12 +560,17 @@ video {
 .shoes {
   display: inline;
 }
-.registerForm, form{
+.registerForm, .loginForm, form{
   align-items: center;
   align-self: center;
   color: black;
   background-color: slategray;
 }
+.loginForm{
+  color: bisque;
+  font-size: 24px;
+}
+
 label {
   font-size: 18px;
   font-weight: bold;
@@ -611,6 +586,8 @@ button.delete, button.submit-btn{
 }
 
 .submit-btn{
+  display: flex;
+  justify-content: flex-end;
   color: bisque;
   background-color: black;
 }
@@ -622,15 +599,15 @@ button.delete, button.submit-btn{
   box-shadow: 1px 1px black;
 }
 .home-text{
-  font-weight: bold;
   font-family: Luckiest_Guy;
   font-size: 30px;
-  border:1px solid black ;
+  border:2px solid black ;
   text-shadow: 2px 5px bisque;
   text-align: center;
 }
 .product-card{
-  display: inline;
+  grid-template-columns: 1rem 1rem 1 rem;
+  align-self: center;
   /* flex-direction: row; */
   /* justify-content: center; */
 }
@@ -638,4 +615,50 @@ button.delete, button.submit-btn{
   /* display: inline-flexbox; */
   /* margin-left: 975px; */
   font-size: 24px;
+}
+svg {
+  margin-left: 70px;
+}
+.logo-e{
+  font-size: 20px;
+}
+
+.logo-w{
+  font-size: 33px;
+}
+
+.logo {
+  font-family: Luckiest_Guy;
+  font-size: 35px;
+  color: bisque;
+  text-shadow: 10px 2px solid white;
+}
+.logo{
+  margin-top: 5px;
+}
+a.cart-btn, a.login, a.register, a.create{
+  margin: 0 auto;
+  justify-content: end;
+  align-items: flex-end;
+  color: bisque;
+  
+  /* text-shadow: 1px 2px solid white ; */
+}
+
+.nav-bar{
+  display: grid;
+  align-items: center;
+  color: bisque;
+  grid-template-columns: 1rem 1rem 1rem 1rem;
+
+}
+h2 {
+  color: bisque;
+}
+.Show{
+  text-align: center;
+  
+}
+.product{
+  align-content: center;
 }

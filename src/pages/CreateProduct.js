@@ -42,6 +42,7 @@ function CreateProduct(props) {
             <section>
                 {/* <h1>Create Product</h1> */}
                 {/* <hr /> */}
+                <h1 className='font-bold rounded-sm  bg-black login_register'>Register</h1>
                 <form className='product-form ' onSubmit={handleSubmit}>
                 <br/>
                     <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor="type">

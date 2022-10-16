@@ -23,7 +23,7 @@ function Home(props){
             <img className='top-image' src='https://media.tenor.com/dfDU02ysJfwAAAAC/blue-anime.gif'></img>
             </div>
     <div className="text-bottom-border">
-        <h1 className="home-text bg-stone-200">All Products</h1>
+        <h1 className="home-text bg-slate-500">All Products</h1>
     </div>
     <section className="productList bg-stone-200 grid grid-rows-2 grid-cols-3 ">
         

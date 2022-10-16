@@ -38,11 +38,12 @@ const handleChange = (e) => {
 };
 
 return (
-    <div className='loginForm'>
-        
-        <h1 className='login_register'>Login</h1>
-        <form className='mt-8 space-y-6' onSubmit={handleSubmit}>
-            <label htmlFor="username">Username: </label>
+    <div className='loginForm grid grid-cols-3 gap-24'>
+        <h1 className="logo hover:border-gray-300  hover:text-slate-500">
+                    Thrifts</h1>
+        <form className='loginForm mt-8 space-y-4 ' onSubmit={handleSubmit}>
+        <h1 className=' font-bold login_register rounded-sm bg-black'>Login</h1>
+            <label className='text-sm font-medium' htmlFor="username">Username: </label>
             <input
                 id="username"
                 name="username"
@@ -52,19 +53,7 @@ return (
         />
         <br />
         <br />
-        <label htmlFor="email">Email: </label>
-            <input
-                id="email"
-                name="email"
-                value={input.email}
-                onChange={handleChange}
-                className="text-sm text-gray-base w-full 
-                mr-3 py-5 px-4 h-2 border 
-                border-gray-200 rounded mb-2"
-        />
-        <br />
-        <br />
-            <label htmlFor="password">Password: </label>
+            <label className='text-sm font-medium' htmlFor="password">Password: </label>
             <input
                 id="password"
                 name="password"
@@ -76,8 +65,11 @@ return (
         />
         <br />
         <br />
-        <button className='submit-btn'><input type="submit" value="signup"/> </button>
+        <div className='center-btn'></div>
+        <button className='border border-transparent hover:border-gray-300 bg-gray-900 hover:bg-white text-white hover:text-gray-900 flex flex-row justify-center items-center space-x-2 py-2 rounded w-full submit-btn'><input type="submit" value="signup"/> </button>
         </form>
+        <h1 className="logo hover:border-gray-300  hover:text-slate-500">
+                    Thrifts</h1>
         </div>
 
     );

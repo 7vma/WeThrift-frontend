@@ -97,8 +97,8 @@ function Edit(props) {
             </section>
             <section>
                 <h2>Edit this Product</h2>
-                <form onSubmit={updateProduct}>
-                    <input
+                <form className='' onSubmit={updateProduct}>
+                    <input 
                         type="text"
                         value={editForm.price}
                         name="price"
