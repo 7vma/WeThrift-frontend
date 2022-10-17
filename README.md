@@ -68,4 +68,16 @@ This online community can vary from day-to-day thrift haulers, to individuals wh
 <img src="https://cdn.iconscout.com/icon/free/png-256/mongodb-5-1175140.png" width="100" height="100"/>
 </p>
 
-conclusion:
+# conclusion:
+### Features for the future
+- Comments
+- update both Schemas
+- include sizes:, dropdown selection
+- type: as in a dropdown selection 
+- rename type to catergory
+- connect the buy with product backend
+- like button
+- add avatar to users
+
+- styling / more modern updated
+- styling on show page and edit page
