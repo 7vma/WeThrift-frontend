@@ -49,6 +49,8 @@ This online community can vary from day-to-day thrift haulers, to individuals wh
 - Upload Product Page
 ![uploadPage](https://i.imgur.com/VvXfMDP.png)
 
+## Routes:
+![Routes](https://i.imgur.com/VB1ZWsQ.png)
 
 ## Technologies used:
 
@@ -62,3 +64,4 @@ This online community can vary from day-to-day thrift haulers, to individuals wh
 <img src="https://cdn.iconscout.com/icon/free/png-256/mongodb-5-1175140.png" width="100" height="100"/>
 </p>
 
+conclusion:
