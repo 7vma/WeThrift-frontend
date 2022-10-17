@@ -69,7 +69,7 @@ useEffect(() => {
 				<img className='product-img' src={product.image} alt={product.description} />
                 <div className=''>
                     {/* <Edit /> */}
-                    <button className=' delete'><a className=' text-center' href='/cart'> BUY</a></button>
+                    <button className=' delete'><a className=' text-center' href='/cart'> Buy</a></button>
                     <Link to= {`/products/edit/${product._id}` }>
                     <button className=' delete'><a className=' text-center' href='/products/edit/{:id}'> Edit</a></button>
                     </Link>
