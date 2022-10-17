@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import Edit from './Edit'
 import { Link } from "react-router-dom";
-
+import{Redirect} from 'react-router'
 function Show() {
     const [ product, setProduct ] = useState(null)
 		const { id } = useParams()
@@ -34,11 +34,11 @@ console.log(response)
         // const deletedProduct = await response.json()
 
           // console.log(deletedPerson)
-        navigate(URL)
+        navigate('/home')
 
     } catch (err) {
         console.log(err)
-        navigate(URL)
+        navigate("/home")
     }
 }
 
@@ -62,16 +62,15 @@ useEffect(() => {
                 <h1 className='home-text'>Product Details</h1>
 			<div className="product-card">
 				
-				
-				<img className='show-image' src={product.image} alt={product.description} />
-                <h2>{product.title}</h2>
+            <h2>{product.title}</h2>
                 <h2>{product.brand}</h2>
 				<h2>{product.price}</h2>
-
-                <div className='submit-btn'>
+				
+				<img className='show-image' src={product.image} alt={product.description} />
+                <div className=''>
                     {/* <Edit /> */}
                     <Link to= {`/products/edit/${product._id}` }>
-                    <button className='edit'><a className='edit' href='/products/edit/{:id}'> Edit</a></button>
+                    <button className=' delete'><a className=' text-center' href='/products/edit/{:id}'> Edit</a></button>
                     </Link>
                     <button className="delete" onClick={removeProduct}>
 						Remove Product

@@ -70,7 +70,7 @@ function Edit(props) {
 
         } catch (err) {
             console.log(err)
-            navigate(URL)
+            navigate('/home')
         }
     }
 
@@ -82,7 +82,7 @@ function Edit(props) {
         <>
             <section>
                 <div className="product">
-                    <h1>Show Page</h1>
+                    <h1 className='home-text '>Edit Page</h1>
                     <h2>{product.price}</h2>
                     <h2>{product.title}</h2>
                     <img src={product.image} alt={product.title + " image"} />

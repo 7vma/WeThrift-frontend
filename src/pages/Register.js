@@ -26,12 +26,15 @@ const handleChange = (e) => {
 };
 
 return (
-    <div className='loginForm '>
+    <div className='loginForm grid grid-cols-3 gap-24  '>
         
-        <h1 className='font-bold rounded-sm  bg-black login_register'>Register</h1>
-        <form className='mt-12' onSubmit={handleSubmit}>
-        <div className="grid grid-cols-3 gap-6">
-            <label htmlFor="username" className='block text-sm font-medium '>Username: </label>
+        <h1 className="logo  hover:border-gray-300  hover:text-slate-500">
+                    Thrifts</h1>
+        <form className='mt-12 border border-black border-3 rounded' onSubmit={handleSubmit}>
+
+        <h1 className=' rounded login_register  bg-black border border-transparent flex flex-row justify-center items-center space-x-2 py-2 w-full'>Register</h1>
+        <div className="">
+            <label htmlFor="username" className='block text-sm login_register font-medium '>Username: </label>
             <input
                 id="username"
                 name="username"
@@ -42,7 +45,7 @@ return (
         {/* <div className="-space-y-px rounded-md shadow-sm"></div> */}
         <br />
         <br />
-        <label htmlFor="email" className='block text-sm font-medium ' >Email: </label>
+        <label htmlFor="email" className='block text-sm font-medium login_register' >Email: </label>
             <input
                 id="email"
                 name="email"
@@ -52,7 +55,7 @@ return (
         />
         <br />
         <br />
-            <label htmlFor="password" className='block text-sm font-medium ' >Password: </label>
+            <label htmlFor="password" className='block text-sm font-medium login_register ' >Password: </label>
             <input
                 id="password"
                 name="password"

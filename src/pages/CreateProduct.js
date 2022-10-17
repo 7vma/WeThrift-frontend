@@ -38,61 +38,67 @@ function CreateProduct(props) {
     if(getUserToken()){
         // conditional render to prevent a form from submitting a request with a missing token
         return (
-
-            <section>
+            
+            <section className=''>
+                <div className='login_register grid grid-cols-3 gap-8 loginForm'>
                 {/* <h1>Create Product</h1> */}
                 {/* <hr /> */}
-                <h1 className='font-bold rounded-sm  bg-black login_register'>Register</h1>
-                <form className='product-form ' onSubmit={handleSubmit}>
-                <br/>
-                    <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor="type">
+                <h1 className="logo hover:border-gray-300  hover:text-slate-500">
+                    Thrifts</h1>
+                
+                <form className='product-form mt-8 space-y-4 login_register border border-black' onSubmit={handleSubmit}>
+                <h1 className=' login_register rounded-sm bg-black border-transparent flex flex-row justify-center items-center space-x-2 py-1 rounded w-full'> Upload Product Form</h1>
+            
+                    <label className='  text-sm ' htmlFor="type">
                         Type:
-                        <input type="text" name="type" id="type" value={input.type} onChange={handleChange} />
+                        <input className='relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm' type="text" name="type" id="type" value={input.type} onChange={handleChange} />
                     </label>
                     {/* name attributes will set the request body's key value pairs  */}
                     {/* req.body { title: "abcd", body: 'abcd' } */}
-                    <br/>
-                    <br/>
-                    <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor="brand">
+                    
+                    
+                    <label className='  text-sm  mb-2' htmlFor="brand">
                         Brand:
-                        <input type="text" name="brand" id="brand" value={input.brand} onChange={handleChange}/>
+                        <input className='relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm' type="text" name="brand" id="brand" value={input.brand} onChange={handleChange}/>
                     </label>
-                    <br/>
-                    <br/>
-                    <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor="image">
+                    
+                    
+                    <label className='  text-sm  mb-2' htmlFor="image">
                         Image:
-                        <input type="text" name="image" id="image" value={input.image} onChange={handleChange}/>
+                        <input className='relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm' type="text" name="image" id="image" value={input.image} onChange={handleChange}/>
                     </label>
-                    <br/>
-                    <br/>
-                    <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor="description">
+                    
+                    
+                    <label className='  text-sm  mb-2' htmlFor="description">
                         Description:
-                        <input type="text" name="description" id="description" value={input.description} onChange={handleChange}/>
+                        <input className='relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm' type="text" name="description" id="description" value={input.description} onChange={handleChange}/>
                     </label>
-                    <br/>
-                    <br/>
-                    <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor="title">
+                    
+                    
+                    <label className='  text-sm  mb-2' htmlFor="title">
                         title:
-                        <input type="text" name="title" id="title" value={input.title} onChange={handleChange}/>
+                        <input className='relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm' type="text" name="title" id="title" value={input.title} onChange={handleChange}/>
                     </label>
-                    <br/>
-                    <br/>
-                    <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor="condition">
+                    
+                    
+                    <label className='block  text-sm  mb-2' htmlFor="condition">
                         Conditon:
-                        <input type="text" name="condition" id="condition" value={input.condition} onChange={handleChange}/>
+                        <input className='relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm' type="text" name="condition" id="condition" value={input.condition} onChange={handleChange}/>
                     </label>
-                    <br/>
-                    <br/>
-                    <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor="price">
+                    
+                    
+                    <label className='block  text-sm  mb-2' htmlFor="price">
                         Price:
-                        <input type="text" name="price" id="price" value={input.price} onChange={handleChange}/>
+                        <input className='relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm' type="text" name="price" id="price" value={input.price} onChange={handleChange}/>
                     </label>
-                    <br/>
-                    <br/>
-                    <button className='submit-btn' type="submit">Create A Product</button>
+                    
+                    
+                    <button className='border border-transparent hover:border-gray-300 bg-gray-900 hover:bg-white text-white hover:text-gray-900 flex flex-row justify-center items-center space-x-2 py-2 rounded w-full submit-btn' type="submit">Upload A Product</button>
                 </form>
                 {/* inputs for all fields required to create a new document */}
-            </section>)
+                </div>
+            </section>
+            )
     } else {
         return <p>Please login to create a note</p>
     }
