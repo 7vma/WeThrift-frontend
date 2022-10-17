@@ -15,7 +15,7 @@ This online community can vary from day-to-day thrift haulers, to individuals wh
 - Post
 - Buy
 
-### POST:
+### Post:
 - Type
 - Brand
 - Image
@@ -34,12 +34,20 @@ This online community can vary from day-to-day thrift haulers, to individuals wh
 ### Views:
 
 - Login Page
+![loginPage](https://i.imgur.com/XK9Y4fN.png)
 - Register Page
+![registerPage](https://i.imgur.com/dvpbP6X.png)
 - Home/Index Page
+![homePage](https://i.imgur.com/RGh05La.png)
 - Show Page
+![showPage](https://i.imgur.com/VK1hsVu.png)
+![showPage](https://i.imgur.com/Xm5xGKE.png)
 - Cart Page
+![cartPage](https://i.imgur.com/KJk2ln9.png)
 - Edit Page
+![editPage](https://i.imgur.com/vQlRCao.png)
 - Upload Product Page
+![uploadPage](https://i.imgur.com/VvXfMDP.png)
 
 
 ## Technologies used:
@@ -50,7 +58,7 @@ This online community can vary from day-to-day thrift haulers, to individuals wh
 <img src="https://www.svgrepo.com/show/354431/tailwindcss-icon.svg" width="100" height="100"/>
 <img src="https://images.vexels.com/media/users/3/166403/isolated/lists/a5a33bf3004830a2bd581e9fa65de660-javascript-programming-language-icon.png" width="100" height="100"/>
 <img src="https://cdn.iconscout.com/icon/free/png-256/html-5-1-1175208.png" width="100" height="100"/>
-!<img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/node-js-5363131-4488920.png" width="100" height="100"/>
+<img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/node-js-5363131-4488920.png" width="100" height="100"/>
 <img src="https://cdn.iconscout.com/icon/free/png-256/mongodb-5-1175140.png" width="100" height="100"/>
 </p>
 
