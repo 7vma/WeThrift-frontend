@@ -3,8 +3,6 @@ import Register from "../pages/Register";
 import Login from "../pages/Login";
 import Home from "../pages/Home";
 import CreateProduct from "../pages/CreateProduct";
-import Update from "../pages/Edit";
-import Delete from "../pages/Delete";
 import Show from "../pages/Show";
 import Cart from "../pages/Cart";
 import Edit from "../pages/Edit";

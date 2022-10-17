@@ -60,13 +60,13 @@ useEffect(() => {
 		return (
             <div className='Show'>
                 <h1 className='home-text'>Product Details</h1>
-			<div className="product-card">
+			<div className="product-card grid grid-template-col justify-center">
 				
-            <h2>{product.title}</h2>
-                <h2>{product.brand}</h2>
-				<h2>{product.price}</h2>
+                <h2 className=' font-bold'>{product.title}</h2>
+                <h2 className=' font-bold'>{product.brand}</h2>
+				<h2 className=' font-bold'>{product.price}</h2>
 				
-				<img className='show-image' src={product.image} alt={product.description} />
+				<img className='product-img' src={product.image} alt={product.description} />
                 <div className=''>
                     {/* <Edit /> */}
                     <Link to= {`/products/edit/${product._id}` }>

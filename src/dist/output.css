@@ -665,3 +665,9 @@ h2 {
 .login_register{
 color: bisque;
 }
+.product-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

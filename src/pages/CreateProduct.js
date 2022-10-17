@@ -47,7 +47,7 @@ function CreateProduct(props) {
                     Thrifts</h1>
                 
                 <form className='product-form mt-8 space-y-4 login_register border border-black' onSubmit={handleSubmit}>
-                <h1 className=' login_register rounded-sm bg-black border-transparent flex flex-row justify-center items-center space-x-2 py-1 rounded w-full'> Upload Product Form</h1>
+                <h1 className=' login_register rounded-sm bg-black border-transparent flex flex-row justify-center items-center space-x-2 py-1 w-full'> Upload Product Form</h1>
             
                     <label className='  text-sm ' htmlFor="type">
                         Type:

@@ -26,7 +26,7 @@ const handleChange = (e) => {
 };
 
 return (
-    <div className='loginForm grid grid-cols-3 gap-24  '>
+    <div className='loginForm rounded grid grid-cols-3 gap-24  '>
         
         <h1 className="logo  hover:border-gray-300  hover:text-slate-500">
                     Thrifts</h1>
@@ -40,7 +40,7 @@ return (
                 name="username"
                 value={input.username}
                 onChange={handleChange}
-                className=" min-h-full items-center justify-center py- px-2 sm:px-6 lg:px-8"
+                className=" min-h-full w-full items-center justify-center py- px-2 sm:px-6 lg:px-8"
         />
         {/* <div className="-space-y-px rounded-md shadow-sm"></div> */}
         <br />
@@ -51,7 +51,7 @@ return (
                 name="email"
                 value={input.email}
                 onChange={handleChange}
-                className="min-h-full items-center justify-center py-1 px-4 sm:px-6 lg:px-8"
+                className="min-h-full w-full items-center justify-center py-1 px-4 sm:px-6 lg:px-8"
         />
         <br />
         <br />
@@ -61,12 +61,12 @@ return (
                 name="password"
                 value={input.password}
                 onChange={handleChange}
-                className="min-h-full items-center justify-center py-1 px-4 sm:px-6 lg:px-8"
+                className="min-h-full w-full items-center justify-center py-1 px-4 sm:px-6 lg:px-8"
         />
         <br />
         <br />
         <div className='center-btn'></div>
-        <button className=' border border-transparent hover:border-gray-300 bg-gray-900 hover:bg-white text-white hover:text-gray-900 flex flex-row justify-center items-center space-x-2 py-2 rounded w-full submit-btn'><input type="submit" value="signup"/> </button>
+        <button className=' border  border-transparent hover:border-gray-300 bg-gray-900 hover:bg-white text-white hover:text-gray-900 flex flex-row justify-center items-center space-x-2 py-2 rounded w-full submit-btn'><input type="submit" value="signup"/> </button>
         </div>
         </form>
         </div>

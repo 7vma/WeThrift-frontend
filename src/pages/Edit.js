@@ -80,30 +80,33 @@ function Edit(props) {
 
     const loaded = () => (
         <>
-            <section>
-                <div className="product">
-                    <h1 className='home-text '>Edit Page</h1>
-                    <h2>{product.price}</h2>
-                    <h2>{product.title}</h2>
-                    <img src={product.image} alt={product.title + " image"} />
-                    <div>
+        <h1 className='home-text '>Edit Page</h1>
+            <section className="grid grid-template-col justify-center">
+                <div >
+                    
+                    <h2 className=' font-bold'>{product.price}</h2>
+                    <h2 className=' font-bold'>{product.title}</h2>
+                    <img className='product-img' src={product.image} alt={product.title + " image"} />
+                
+                    <button className=' delete'> <input type="submit" value="Update Product" /></button>  
+                <div>
                         <button 
 														className="delete" 
 														onClick={removeProduct}>
 															Remove Product
 												</button>
                     </div>
+
                 </div>
-            </section>
-            <section>
                 <h2>Edit this Product</h2>
-                <form className='' onSubmit={updateProduct}>
+                <form className='loginForm text-black' onSubmit={updateProduct}>
                     <input 
                         type="text"
                         value={editForm.price}
                         name="price"
                         placeholder="price"
                         onChange={handleChange}
+                        className=" loginForm bg-black"
                     />
                     <input
                         type="text"
@@ -111,6 +114,7 @@ function Edit(props) {
                         name="image"
                         placeholder="image URL"
                         onChange={handleChange}
+                        className=" loginForm bg-black"
                     />
                     <input
                         type="text"
@@ -118,8 +122,9 @@ function Edit(props) {
                         name="title"
                         placeholder="title"
                         onChange={handleChange}
+                        className=" loginForm bg-black"
                     />
-                <button className='submit-btn'> <input type="submit" value="Update Product" /></button>  
+                
                 </form> 
             </section>
         </>
