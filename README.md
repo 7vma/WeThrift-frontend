@@ -1,8 +1,8 @@
 # Resell ecommerce site
 
 ## Description:
-An e-commerce site focused on buying and reselling a variety of items, from clothing to miscellaneous items. Users set their price, can respond to reviews by responding openly within the post.
-This online community can vary from day-to-day thrift haulers, to individuals who simply want to resell their unwanted belongings. Come explore the goodies hiding in ones closet with WeThrift.
+An e-commerce site focused on buying and reselling a variety of items, from clothing to miscellaneous items. Users set their price.
+This online community can vary from day-to-day thrift haulers, to individuals who simply want to resell their unwanted belongings. Come explore the goodies hiding in ones closet with Thrifts.
 
 
 ## Wireframe:
@@ -51,6 +51,10 @@ This online community can vary from day-to-day thrift haulers, to individuals wh
 
 ## Routes:
 ![Routes](https://i.imgur.com/VB1ZWsQ.png)
+
+## Schemas:
+![Schemas](https://i.imgur.com/7uTUuZX.png)
+![Schemas](https://i.imgur.com/ZoaeEdQ.png)
 
 ## Technologies used:
 
