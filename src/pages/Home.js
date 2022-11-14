@@ -30,7 +30,7 @@ function Home(props){
         
         {productList.map((product,_id)=>{
             return (
-                <div className='home-text hover:bg-slate-500 max-w-md'>
+                <div className=' hover:bg-slate-500 font-bold border-black max-w-md'>
                     <h1 className='text-center    '>{product.title}</h1>
                     <h1 className='text-center  '>{product.price}</h1>
                 <Link to= {`/products/${product._id}` }>
