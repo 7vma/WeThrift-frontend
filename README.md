@@ -1,8 +1,8 @@
 # Resell ecommerce site
 
 ## Description:
-An e-commerce site focused on buying and reselling a variety of items, from clothing to miscellaneous items. Users set their price, can respond to reviews by responding openly within the post.
-This online community can vary from day-to-day thrift haulers, to individuals who simply want to resell their unwanted belongings. Come explore the goodies hiding in ones closet with WeThrift.
+An e-commerce site focused on buying and reselling a variety of items, from clothing to miscellaneous items. Users set their price.
+This online community can vary from day-to-day thrift haulers, to individuals who simply want to resell their unwanted belongings. Come explore the goodies hiding in ones closet with Thrifts.
 
 
 ## Wireframe:
@@ -49,6 +49,12 @@ This online community can vary from day-to-day thrift haulers, to individuals wh
 - Upload Product Page
 ![uploadPage](https://i.imgur.com/VvXfMDP.png)
 
+## Routes:
+![Routes](https://i.imgur.com/VB1ZWsQ.png)
+
+## Schemas:
+![Schemas](https://i.imgur.com/7uTUuZX.png)
+![Schemas](https://i.imgur.com/ZoaeEdQ.png)
 
 ## Technologies used:
 
@@ -62,3 +68,16 @@ This online community can vary from day-to-day thrift haulers, to individuals wh
 <img src="https://cdn.iconscout.com/icon/free/png-256/mongodb-5-1175140.png" width="100" height="100"/>
 </p>
 
+# conclusion:
+### Features for the future
+- Comments
+- update both Schemas
+- include sizes:, dropdown selection
+- type: as in a dropdown selection 
+- rename type to catergory
+- connect the buy with product backend
+- like button
+- add avatar to users
+
+- styling / more modern updated
+- styling on show page and edit page
